@@ -14,7 +14,7 @@ var userName='',pwdContent='',pwdSecure='',tel='',email='';
 myUser.onchange=function(){
     userName = myUser.value;
     if( !userNameJudge(userName) ){
-        myUserComplement.textContent="用户名不符合要求！";
+        myUserComplement.textContent="用户名不符合要求！仅允许汉字、大小写字母、数字和 _ 符号";
         myUserComplement.style.color="red";
     }
     else{
